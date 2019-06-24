@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Headings</title>
+  </head>
+  <body>
+    <p>
+      Headings (h1 through h6 elements) are workhorse tags that help provide
+      structure and labeling to your content. Screen readers can be set to read
+      only the headings on a page so the user gets a summary. This means it is
+      important for the heading tags in your markup to have semantic meaning and
+      relate to each other, not be picked merely for their size values.
+    </p>
+    <p>
+      Semantic meaning means that the tag you use around content indicates the
+      type of information it contains.
+    </p>
+    <p>
+      If you were writing a paper with an introduction, a body, and a
+      conclusion, it wouldn't make much sense to put the conclusion as a
+      subsection of the body in your outline. It should be its own section.
+      Similarly, the heading tags in a webpage need to go in order and indicate
+      the hierarchical relationships of your content.
+    </p>
+    <p>
+      Headings with equal (or higher) rank start new implied sections, headings
+      with lower rank start subsections of the previous one.
+    </p>
+    <p>
+      As an example, a page with an h2 element followed by several subsections
+      labeled with h4 tags would confuse a screen reader user. With six choices,
+      it's tempting to use a tag because it looks better in a browser, but you
+      can use CSS to edit the relative sizing.
+    </p>
+    <p>
+      One final point, each page should always have one (and only one) h1
+      element, which is the main subject of your content. This and the other
+      headings are used in part by search engines to understand the topic of the
+      page.
+    </p>
+
+    <h1>(Wrong hierarchical relationships) ----- (Correct hierarchical relationships)</h1>
+    <main style="float: left; width: 50%;">
+      <h2>H2</h2>
+      <h5>H5</h5>
+      <h5>H5</h5>
+
+      <h2>H2</h2>
+      <h5>H5</h5>
+      <h5>H5</h5>
+
+      <h2>H2</h2>
+      <h5>H5</h5>
+      <h5>H5</h5>
+    </main>
+
+    <main style="float: right; width: 50%;">
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h3>H3</h3>
+
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h3>H3</h3>
+
+      <h2>H2</h2>
+      <h3>H3</h3>
+      <h3>H3</h3>
+    </main>
+  </body>
+</html>
