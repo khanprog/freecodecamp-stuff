@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive Image</title>
+    <style>
+      #image1 {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+      #image2 {
+          width: 100px;
+          height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Make an Image Responsive</h1>
+    <img
+      id="image1"
+      src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg"
+      alt="freeCodeCamp stickers set"
+    />
+    <p>
+      Making images responsive with CSS is actually very simple. Instead of
+      applying an absolute width to an element:
+    </p>
+    <code>img { width: 720px; }</code>
+    <p>You can use:</p>
+    <code>
+      img { max-width: 100%; display: block; height: auto; }
+    </code>
+    <p>
+      The max-width property of 100% scales the image to fit the width of its
+      container, but the image won't stretch wider than its original width.
+      Setting the display property to block changes the image from an inline
+      element (its default), to a block element on its own line. The height
+      property of auto keeps the original aspect ratio of the image.
+    </p>
+    <img
+      id="image2"
+      src="https://s3.amazonaws.com/freecodecamp/FCCStickers-CamperBot200x200.jpg"
+      alt="freeCodeCamp sticker that says 'Because CamperBot Cares'"
+    />
+    <p>
+      The simplest way to make your images appear "retina" (and optimize them
+      for retina displays) is to define their width and height values as only
+      half of what the original file is.
+    </p>
+    <p>
+      Here is an example of an image that is only using half of the original
+      height and width <code>{ 500px X 500px }</code>:
+    </p>
+    <code>
+      <!-- <style> -->
+        img {
+          height: 250px;
+          width: 250px;
+        }
+      <!-- </style> -->
+      <!-- <img src="coolPic500x500" alt="A most excellent picture" /> -->
+    </code>
+
+  </body>
+</html>
