@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex Direction</title>
+    <style>
+        #box-container {
+            display: flex;
+            height: 500px;
+            flex-direction:row-reverse;
+            /*flex-direction:row;*/
+            /*flex-direction:column;*/
+            /*flex-direction:column-reverse;*/
+             /*flex: 2 2 150px;*/ /*flex: flex-grow flex-shrink flex-basis*/
+             
+          }
+          #box-1 {
+            background-color: dodgerblue;
+            /*align-self: center;*/ /*Align individual flex element*/
+            width: 50%;
+            height: 50%;
+            /*order: 2*/
+          }
+        
+          #box-2 {
+            background-color: orangered;
+            width: 50%;
+            height: 50%;
+            /*order: 1*/ /*Changes the order of the HTML source rendering*/
+          }
+    </style>
+  </head>
+  <body>
+    <div id="box-container">
+      <div id="box-1"></div>
+      <div id="box-2"></div>
+    </div>
+  </body>
+</html>
